@@ -50,6 +50,11 @@ nav ul li a:hover {
 }
 
 h2 {
-    font-family: 'Heattenschweiler', sans-serif;
+    font-family: 'Haettenschweiler', sans-serif;
     letter-spacing: 1.5px;
+    color: rgb(9 81 92);
+}
+
+details, summary {
+    background-color: #028A9E;
 }
