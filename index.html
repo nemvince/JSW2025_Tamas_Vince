@@ -84,12 +84,14 @@
                             melyekben a H:O arány legtöbbször 2:1 (mint a vízben), ezért régen a szén hidrátjainak
                             gondolták őket. A szénhidrátok hevítéssel vagy erélyes vízelvonó szer hatására (például
                             tömény kénsav) szénre és vízre bonthatók. (Az 1800-as években „szénvizegyek" néven
-                            emlegették. 1844-ben Carl Schmidt megalkotta a szénhidrát kifejezést.)</p>
+                            emlegették. 1844-ben Carl Schmidt megalkotta a szénhidrát kifejezést.)
+                        </p>
                         <p>Fontos szerepük, hogy élelmiszerként fogyasztva energiát szolgáltatnak az állati és emberi
                             szervezetben (cukrok): a bevitt energia 50-70%-a szénhidrátokból származik.
                             <b>Tartaléktápanyagok</b> (keményítő), valamint vázanyagok (cellulóz) a növényekben.
                             Ezenkívül más fontos szerves molekulák felépítésében is részt vesznek: az RNS ribózt, a DNS
-                            dezoxiribózt tartalmaz.</p>
+                            dezoxiribózt tartalmaz.
+                        </p>
                         <p>A szacharid szó görög eredetű, jelentése édes. A szénhidrátok közé tartozik például a
                             szőlőcukor (glükóz), a gyümölcscukor (fruktóz), a répa- vagy nádcukor (szacharóz), a
                             keményítő és a cellulóz.</p>
@@ -104,7 +106,8 @@
                             <b>trigliceridjeit</b> hívjuk így. A köznyelv által olajnak nevezett anyagok egy része
                             szintén ilyen triglicerid. A zsírok az összetett lipidek közé tartoznak. Biológiailag
                             rendkívül fontos, természetes vegyületek, melyeket növényi és állati szervezetek állítanak
-                            elő.</p>
+                            elő.
+                        </p>
                     </div>
                 </details>
 
@@ -184,8 +187,11 @@
             <h2>Kalkulátor</h2>
             <div class="my-3 flex flex-col gap-1.5">
                 <label for="name">Gyümölcs neve</label>
-                <select name="name" id="name" class="p-2 border rounded-lg">
-                    <option value="placeholder">Válasszon egy gyümölcsöt!</option>
+                <select name="name" id="name" class="p-2 border rounded-lg"
+                    aria-placeholder="Válasszon egy gyümölcsöt!">
+                    <option value="placeholder">
+                        Válasszon egy gyümölcsöt!
+                    </option>
                 </select>
             </div>
             <div class="my-3 flex flex-col gap-1.5">
@@ -193,12 +199,24 @@
                 <input name="hany" id="hany" class="p-2 border rounded-lg" type="number" value="1" min="1" />
             </div>
             <div class="">
-                <button class="bg-black text-white rounded-md">
+                <button class="bg-black text-white rounded-md px-2 py-1">
                     Számítás
                 </button>
-                <button class="bg-white text-black border rounded-md">
+                <button class="bg-white text-black border rounded-md px-2 py-1">
                     Visszaállítás
                 </button>
+            </div>
+            <div class="grid grid-cols-5 gap-3 mt-2">
+                <div class="flex justify-center h-12 outline-4 rounded-lg border border-white border-2 text-white font-bold pt-0.5"
+                    style="outline-color: rgb(73 126 23);background-color: rgb(73 126 23);">Zsír</div>
+                <div class="flex justify-center h-12 outline-4 rounded-lg border border-white border-2 text-white font-bold pt-0.5"
+                    style="outline-color: rgb(31 83 143);background-color: rgb(31 83 143);">Rost</div>
+                <div class="flex justify-center h-12 outline-4 rounded-lg border border-white border-2 text-white font-bold pt-0.5"
+                    style="outline-color: rgb(2 138 158);background-color: rgb(2 138 158);">Kalóra</div>
+                <div class="flex justify-center h-12 outline-4 rounded-lg border border-white border-2 text-white font-bold pt-0.5"
+                    style="outline-color: #611E72;background-color: ;">Fehérje</div>
+                <div class="flex justify-center h-12 outline-4 rounded-lg border border-white border-2 text-white font-bold pt-0.5"
+                    style="outline-color: rgb(151 23 23);background-color: rgb(151 23 23);">Szénhidrát</div>
             </div>
         </section>
     </main>
