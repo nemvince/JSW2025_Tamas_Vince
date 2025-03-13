@@ -16,11 +16,11 @@
                 class="relative w-[300px] aspect-square text-white top-10 left-10 text-[2.5rem] font-bold flex justify-center items-center rounded-[50%] border-[10px] border-double border-white">
                 Gyümölcsök</h1>
         </div>
-        <nav class="text-white flex gap-6 p-4 items-center">
+        <nav class="text-white flex gap-6 p-4 items-center flex justify-between md:justify-start">
             <span class="text-lg font-bold">
                 <a href="/">Tamás Vince</a>
             </span>
-            <ul class="flex gap-4 text-slate-300">
+            <ul class="flex gap-4 text-slate-300 hidden md:flex">
                 <li>
                     <a href="#fogalmak">Fogalmak</a>
                 </li>
@@ -31,6 +31,9 @@
                     <a href="#kalkulator">Kalkulátor</a>
                 </li>
             </ul>
+            <button class="block flex justify-center items-center text-white w-8 h-8 border rounded-lg md:hidden">
+                <svg class="size-5 text-white fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </button>
         </nav>
     </header>
     <main class="container px-8 md:px-16 py-4 mx-auto max-w-7xl flex flex-col gap-4">
