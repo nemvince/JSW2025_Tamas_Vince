@@ -50,6 +50,8 @@ nav ul li a:hover {
 }
 
 h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
     font-family: 'Haettenschweiler', sans-serif;
     letter-spacing: 1.5px;
     color: rgb(9 81 92);
