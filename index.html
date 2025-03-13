@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="hu" class="h-dvh">
+<html lang="hu" class="h-dvh scroll-smooth">
 
 <head>
     <title>Gyümölcsök</title>
@@ -10,7 +10,6 @@
 </head>
 
 <body class="h-full flex flex-col">
-    <!-- bg set in index.css -->
     <header>
         <div class="h-[600px]">
             <h1
@@ -104,10 +103,50 @@
             </div>
         </section>
         <section id="tapertek">
-
+        <h2>Tápérték- és kalóriatáblázat</h2>
+        <div class="flex justify-center">
+            <table class="w-full md:w-3/4">
+                <thead class="bg-black text-white">
+                    <tr>
+                        <th class="border-b border-slate-700 p-2">Gyümölcs neve</th>
+                        <th class="border-b border-slate-700 p-2">Kalória</th>
+                        <th class="border-b border-slate-700 p-2">Zsír</th>
+                        <th class="border-b border-slate-700 p-2">Szénhidrát</th>
+                        <th class="border-b border-slate-700 p-2">Fehérje</th>
+                        <th class="border-b border-slate-700 p-2">Rost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-100">
+                        <td class="border-b border-slate-700 p-2">Banán</td>
+                        <td class="border-b border-slate-700 p-2">89 kcal</td>
+                        <td class="border-b border-slate-700 p-2 text-center">0.33 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">22.8 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">1.09 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">2.6 g</td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-slate-700 p-2">Alma</td>
+                        <td class="border-b border-slate-700 p-2">52 kcal</td>
+                        <td class="border-b border-slate-700 p-2 text-center">0.17 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">13.8 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">0.26 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">1.3 g</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="border-b border-slate-700 p-2">Narancs</td>
+                        <td class="border-b border-slate-700 p-2">47 kcal</td>
+                        <td class="border-b border-slate-700 p-2 text-center">0.12 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">11.8 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">0.94 g</td>
+                        <td class="border-b border-slate-700 p-2 text-center">2 g</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         </section>
-        <section id="kalkulator">
-
+        <section id="kalkulator" class="max-w-4xl w-full mx-auto flex flex-col">
+            <h2>Kalkulátor</h2>
         </section>
     </main>
 
