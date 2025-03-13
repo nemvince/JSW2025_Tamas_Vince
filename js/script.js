@@ -6,6 +6,8 @@ const resetBtn = document.querySelector('button.bg-white');
 const results = document.querySelectorAll('.grid.grid-cols-5 > div');
 let error = null;
 
+let originalStates = [];
+
 function populate() {
     fruits.forEach(fruit => {
         const option = document.createElement('option');
@@ -58,13 +60,14 @@ function resetForm() {
     hany.value = 1;
     removeError();
     results.forEach(element => {
-        const labelText = element.textContent.trim();
-        element.textContent = labelText;
+        element.innerHTML = originalStates.shift();
     });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     populate();
+    originalStates = Array.from(results).map(element => element
+        .textContent.trim());
     calcBtn.addEventListener('click', calculateResults);
     resetBtn.addEventListener('click', resetForm);
     sel.addEventListener('change', () => {
